@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="pages/homepage/css/hero-component.css">
+    <link rel="stylesheet" href="css/component/nav.css">
+</head>
+<body>
+    <!-- NAVIGATION COMPONENT -->
+    <header class="header" id="header">
+        <nav class="nav-component">
+            <a href="#" class="nav-component-logo">Logo</a>
+
+            <div class="nav-component-menu" id="nav-component-menu">
+                <ul class="nav-component-list">
+                    <li class="nav-component-item">
+                        <a href="index.html" class="nav-component-link">Home</a>
+                    </li>
+                    <li class="nav-component-item">
+                        <a href="pages/jobs.html" class="nav-component-link">Careers</a>
+                    </li>
+                    <li class="nav-component-item">
+                        <a href="pages/apply.html" class="nav-component-link">Apply</a>
+                    </li>
+                    <li class="nav-component-item">
+                        <a href="pages/aboutUs.html" class="nav-component-link">About Us</a>
+                    </li>
+                </ul>
+                <!-- Close button -->
+                <div class="nav-component-close" id="nav-component-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav-component-actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav-component-search" id="search-btn"></i>
+                <!-- Toggle button -->
+                <div class="nav-component-toggle" id="nav-component-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search" id="search">
+        <form action="" class="search-form">
+            <i class="ri-search-line search-icon"></i>
+            <input type="search" placeholder="What are you looking for?" id="search-input">
+        </form>
+        <i class="ri-close-line search-close" id="search-close"></i>
+    </div>
+
+    <!-- MAIN COMPONENT -->
+    <main>
+        <!-- Hero section -->
+        <section id="hero-component">
+            <div class="video-container">
+                <video src="image/homepage/hero-video.mp4" id="hero-background" autoplay muted loop></video>
+            </div>
+            <div class="hero-card">
+                <h1>Impossible Alone.</h1>
+                <h3>See how collaboration makes the impossible, possible.</h3>
+                <span><a href="about.html">About Us</a></span>
+            </div>
+        </section>
+        <section id="hero-component-banner">
+            <figure><a href=""></a></figure>
+            <div>
+                <span>Our annual conference is back in Las Vegas!</span>
+                <p>Be the first to see our latest innovations. For a limited time only, save $1000 on your all-access pass.</p>
+            </div>
+            <div>
+                <button><a href="jobs.html">Join Us!</a></button>
+            </div>
+        </section>
+        
+        <!-- Product Component -->
+        <section id="product-component">
+            <h2>Bubble solutions are designed for all types of work</h2>
+            <span>
+                <div>
+                    <div>
+                        <h3>Make work flow across teams while connecting back to company goals</h3>
+                        <button><a href="">Work differently, together.</a></button>
+                    </div>
+                    <div class="product-card-container">
+                        <article class="product-card">
+                            <figure></figure>
+                            <div>
+                                <h4>Confluence</h4>
+                                <p>Content collaboration</p>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <figure></figure>
+                            <div>
+                                <h4>Trello</h4>
+                                <p>Visal project management</p>
+                            </div>
+                        </article><article class="product-card">
+                            <figure></figure>
+                            <div>
+                                <h4>Jira Work Management</h4>
+                                <p>Business team collaboration</p>
+                            </div>
+                        </article><article class="product-card">
+                            <figure></figure>
+                            <div>
+                                <h4>Atlas</h4>
+                                <p>Teamwork directory</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <figure></figure>
+            </span>
+        </section>
+
+        <!-- Partner Component -->
+        <section id="partner-component">
+            <div>
+                <h2>Join the 250,000+ companies that use our software to power team collaboration</h2>
+                <button><a href="">See all customers</a></button>
+            </div>
+            <span>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+            </span>
+        </section>
+
+        <!-- Careers Component -->
+        <section id="careers-component">
+            <h3>CAREERS</h3>
+            <h2>We can&apos;t do it alone</h2>
+            <p>We have an ambitious road ahead, and we&apos;re looking for people to join our global team to help shape the future of Bubble.</p>
+            <button><a href="">Join the team</a></button>
+        </section>
+    </main>
+
+    <!-- FOOTER COMPONENT -->
+    <footer>
+        <img src="image/homepage/hero-background.jpg" alt="">
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/component/navbar.js"></script>
+    <script src="pages/homepage/js/hero_section.js"></script>
+</body>
+</html>
