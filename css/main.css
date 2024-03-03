@@ -7,7 +7,7 @@
     /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: hsl(230, 75%, 56%);
     --title-color: hsl(230, 75%, 15%);
-    --text-color: hsl(230, 12%, 40%);
+    --text-color: #253858;
     --body-color: hsl(230, 100%, 98%);
     --container-color: hsl(230, 100%, 97%);
     --border-color: hsl(230, 25%, 80%);
@@ -17,6 +17,9 @@
     --normal-font-size: 1rem;
     --h1-font-size-desktop: 2.75rem;
     --h1-font-size-mobile: 2.35rem;
+    --h2-font-size-desktop: 2.25rem;
+
+    --h2-font-size-mobile: 0;
 
     --h3-font-size-desktop: 1.3rem;
     --h3-font-size-mobile: 1rem;
@@ -57,6 +60,12 @@ h1
 {
     margin-bottom: 1.5rem;
     font-size: var(--h1-font-size-desktop);
+}
+
+h2
+{
+    margin-bottom: 1.9rem;
+    font-size: var(--h2-font-size-desktop);
 }
 
 h3
