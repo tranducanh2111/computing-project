@@ -6,12 +6,11 @@
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --title-color: hsl(230, 75%, 15%);
-    --text-color: hsl(230, 12%, 40%);
+    --text-color-search-bar: hsl(230, 12%, 40%);
     --container-color: hsl(230, 100%, 97%);
     --border-color: hsl(230, 25%, 80%);
 
     /*========== Font and typography ==========*/
-    --body-font: "Syne", sans-serif;
     --normal-font-size: 1rem;
 
     /*========== Font weight ==========*/
@@ -41,11 +40,6 @@
 .nav-component ul
 {
     list-style: none;
-}
-
-.nav-component-item a
-{
-    text-decoration: none;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -198,12 +192,12 @@
     width: 100%;
     padding-block: 1rem;
     background-color: var(--container-color);
-    color: var(--text-color);
+    color: var(--text-color-search-bar);
 }
 
 #search-input::placeholder
 {
-    color: var(--text-color);
+    color: var(--text-color-search-bar);
 }
 
 /* Show search */
