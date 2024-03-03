@@ -30,7 +30,7 @@ searchClose.addEventListener('click', () =>{
 
 window.addEventListener('scroll', function() {
    if (window.scrollY > 50) {
-     document.getElementById("header").style.backgroundColor = "rgba(255, 255, 255, 0.95)";
+     document.getElementById("header").style.backgroundColor = "rgba(255, 255, 255, 0.97)";
    } else {
       document.getElementById("header").style.backgroundColor = "rgba(255, 255, 255, 0.3)";
    }
