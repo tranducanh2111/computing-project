@@ -54,11 +54,9 @@ video
     color: var(--text-color);
 }
 
-.hero-card span
+.hero-card .url-with-icon
 {
-    display: flex;
-    align-self: center;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .hero-card span object
