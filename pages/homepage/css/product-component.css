@@ -6,9 +6,8 @@
         "product visualization";
     grid-template-columns: 30% 70%;
     padding: 0 3.75rem;
-    column-gap: 5rem;
     max-width: 80rem;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
 }
 
 #product-component h2
@@ -75,3 +74,22 @@
     margin-bottom: 2.25rem;
 }
 
+@media screen and (max-width: 711px)
+{
+    #product-component
+    {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .product-content-header h3
+    {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    #product-component h2
+    {
+        font-size: 1.5rem;
+    }
+}

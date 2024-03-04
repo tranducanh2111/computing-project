@@ -1,0 +1,12 @@
+#partner-component .logo-list
+{
+    margin: 0 auto;
+    padding-inline-start: 2pc;
+    padding-inline-end: 2pc;
+    width: fit-content;
+}
+
+#partner-component .logo-list img
+{
+    max-width: 50% !important;
+}
