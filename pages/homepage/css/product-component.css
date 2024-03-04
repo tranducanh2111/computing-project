@@ -6,7 +6,6 @@
         "product visualization";
     grid-template-columns: 30% 70%;
     padding: 0 3.75rem;
-    column-gap: 5rem;
     max-width: 80rem;
     margin: 2rem auto 0 auto;
 }
