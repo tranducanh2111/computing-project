@@ -67,7 +67,7 @@ video
 /* Hero Component Banner */
 #hero-component-banner
 {
-    background-image: url('../../image/homepage/hero-component-banner-background.jpg');
+    background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19670.jpg&fm=jpg&w=1920&h=1277&_gl=1*1wlb9i3*_ga*NjM0NzM4NDc5LjE3MDk1NDUzNjI.*_ga_8JE65Q40S6*MTcwOTU0NTM2MS4xLjEuMTcwOTU0NTQxNC4wLjAuMA..");
     width: 85%;
     max-width: 70rem;
     position: relative;
