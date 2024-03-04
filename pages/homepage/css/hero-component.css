@@ -67,7 +67,7 @@ video
 /* Hero Component Banner */
 #hero-component-banner
 {
-    background-image: url(/image/homepage/hero-component-banner-background.jpg);
+    background-image: url(../image/homepage/hero-component-banner-background.jpg);
     width: 85%;
     max-width: 70rem;
     position: relative;
