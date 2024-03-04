@@ -1,0 +1,77 @@
+#product-component
+{
+    display: grid;
+    grid-template-areas:
+        "heading heading"
+        "product visualization";
+    grid-template-columns: 30% 70%;
+    padding: 0 3.75rem;
+    column-gap: 5rem;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+#product-component h2
+{
+    grid-area: heading;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.product-content-header .url-with-icon a
+{
+    color: #0065FF;
+    font-weight: 500;
+}
+
+/* Product Item Container */
+.product-item-container
+{
+    grid-area: product;
+}
+
+.product-content-header
+{
+    margin-bottom: 1.5rem;
+}
+
+.product-content-header .url-with-icon object
+{
+    margin-left: 8px;
+}
+
+/* Product Visualization */
+.product-component-visualization
+{
+    grid-area: visualization;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-component-visualization object
+{
+    width: 80%;
+}
+
+/* Product Card */
+.product-card div
+{
+    display: inline-block;
+}
+
+.product-card-icon object
+{
+    width: 4.5rem;
+    margin-right: 2rem;
+}
+
+.product-card
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2.25rem;
+}
+

@@ -7,8 +7,9 @@
     <!-- Icon CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="pages/homepage/css/hero-component.css">
     <link rel="stylesheet" href="css/component/nav.css">
+    <link rel="stylesheet" href="pages/homepage/css/hero-component.css">
+    <link rel="stylesheet" href="pages/homepage/css/product-component.css">
 </head>
 <body>
     <!-- NAVIGATION COMPONENT -->
@@ -66,7 +67,7 @@
             <div class="hero-card">
                 <h1>Impossible Alone.</h1>
                 <h3>See how collaboration makes the impossible, possible.</h3>
-                <span>
+                <span class="url-with-icon">
                     <object type="image/svg+xml" data="image/icon/play.svg" width="24" height="28"></object>
                     <a href="about.html">About Us</a>
                 </span>
@@ -85,43 +86,54 @@
         <!-- Product Component -->
         <section id="product-component">
             <h2>Bubble solutions are designed for all types of work</h2>
-            <span>
-                <div>
-                    <div>
-                        <h3>Make work flow across teams while connecting back to company goals</h3>
-                        <button><a href="">Work differently, together.</a></button>
-                    </div>
-                    <div class="product-card-container">
-                        <article class="product-card">
-                            <figure></figure>
-                            <div>
-                                <h4>Confluence</h4>
-                                <p>Content collaboration</p>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <figure></figure>
-                            <div>
-                                <h4>Trello</h4>
-                                <p>Visal project management</p>
-                            </div>
-                        </article><article class="product-card">
-                            <figure></figure>
-                            <div>
-                                <h4>Jira Work Management</h4>
-                                <p>Business team collaboration</p>
-                            </div>
-                        </article><article class="product-card">
-                            <figure></figure>
-                            <div>
-                                <h4>Atlas</h4>
-                                <p>Teamwork directory</p>
-                            </div>
-                        </article>
-                    </div>
+            <div class="product-component-visualization">
+                <object type="image/svg+xml" data="image/homepage/product-component-visualization.svg"></object>
+            </div>
+            <div class="product-content">
+                <div class="product-content-header">
+                    <h3>Make work flow across teams while connecting back to company goals</h3>
+                    <span class="url-with-icon">
+                        <a href="">Work differently, together.</a>
+                        <object type="image/svg+xml" data="image/icon/arrow-right.svg" width="20" height="20"></object>
+                    </span>
                 </div>
-                <figure></figure>
-            </span>
+                <div class="product-card-container">
+                    <article class="product-card">
+                        <div class="product-card-icon">
+                            <object type="image/svg+xml" data="/image/icon/users-alt.svg"></object>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Confluence</h4>
+                            <p>Content collaboration</p>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card-icon">
+                            <object type="image/svg+xml" data="/image/icon/chart-histogram.svg"></object>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Trello</h4>
+                            <p>Visual project management</p>
+                        </div>
+                    </article><article class="product-card">
+                        <div class="product-card-icon">
+                            <object type="image/svg+xml" data="/image/icon/headset.svg"></object>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Jira Work Management</h4>
+                            <p>Business team collaboration</p>
+                        </div>
+                    </article><article class="product-card">
+                        <div class="product-card-icon">
+                            <object type="image/svg+xml" data="/image/icon/rocket-lunch.svg"></object>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Atlas</h4>
+                            <p>Teamwork directory</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <!-- Partner Component -->
