@@ -1,0 +1,86 @@
+@import url('../../../css/main.css');
+
+#careers-component
+{
+   margin-top: 5rem;
+}
+
+#careers-component .careers-component-content
+{
+    text-align: center;
+    max-width: 29rem;
+    margin: 0 auto;
+}
+
+#careers-component .careers-component-content h3
+{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--second-color);
+}
+
+#careers-component .careers-component-content h2
+{
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    color: var(--title-color);
+}
+
+#careers-component .careers-component-content p
+{
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+/* Career Button */
+#careers-component .careers-component-content button
+{
+    height: 40px;
+    width: 136px;
+    padding: 0 1rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--article-url-color);
+}
+
+#careers-component .careers-component-content button a
+{
+    color: white;
+}
+
+/* Career Visualization */
+#careers-component #career-visulization
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#careers-component #career-visulization object
+{
+    max-height: 10rem;
+}
+
+@media screen and (max-width: 760px)
+{
+    #careers-component .careers-component-content
+    {
+        padding: 0 2rem;
+    }
+
+    #careers-component #career-visulization
+    {
+        display: block;
+    }
+
+    #careers-component #career-visulization object:nth-child(1)
+    {
+        width: 100% !important;
+        max-height: 100rem;
+    }
+
+    #careers-component #career-visulization object:nth-child(2)
+    {
+        display: none;
+    }
+}
