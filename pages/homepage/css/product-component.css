@@ -1,3 +1,5 @@
+@import url('../../../css/main.css');
+
 #product-component
 {
     display: grid;
@@ -19,8 +21,8 @@
 
 .product-content-header .url-with-icon a
 {
-    color: #0065FF;
-    font-weight: 500;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
 }
 
 /* Product Item Container */
