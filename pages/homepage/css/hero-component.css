@@ -1,3 +1,5 @@
+@import url('../../../css/main.css');
+
 :root
 {
     --hero-component-height: 36rem;
@@ -45,13 +47,13 @@ video
 
 .hero-card h1, .hero-card h3, .hero-card span
 {
-    color: var(--text-color);
+    color: white;
 }
 
 .hero-card span a
 {
     font-size: 1.25rem;
-    color: var(--text-color);
+    color: white;
 }
 
 .hero-card .url-with-icon

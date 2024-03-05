@@ -1,0 +1,64 @@
+@import url('../../../css/main.css');
+
+#event-component
+{
+    max-width: 72rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    padding: 0 3.75rem;
+    margin: 4rem auto 0 auto;
+}
+
+/* Event Item */
+#event-component article img
+{
+    width: 100%;
+}
+
+/* Event Component Header */
+#event-component .event-component-header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#event-component .event-component-header h3
+{
+    color: var(--second-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#event-component .event-component-header h2
+{
+    color: var(--title-color);
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+#event-component .event-component-header .url-with-icon
+{
+    align-self: flex-start;
+}
+
+#event-component .event-component-header .url-with-icon a
+{
+    color: var(--article-url-color);
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 550px)
+{
+    #event-component
+    {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    #event-component article
+    {
+        margin-top: 2rem;
+    }
+}

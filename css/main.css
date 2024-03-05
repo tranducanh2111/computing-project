@@ -6,11 +6,10 @@
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: #0065FF;
-    --title-color: hsl(230, 75%, 15%);
-    --text-color: #253858;
-    --body-color: hsl(230, 100%, 98%);
-    --container-color: hsl(230, 100%, 97%);
-    --border-color: hsl(230, 25%, 80%);
+    --second-color: #2684FF;
+    --title-color: #253858;
+    --text-color: #091E42;
+    --article-url-color: #0052CC;
 
     /*========== Font and typography ==========*/
     --body-font: "Segoe UI", "Roboto", "Fira Sans", "Droid Sans", "Helvetica Neue";
@@ -60,18 +59,21 @@ h1
 {
     margin-bottom: 1.5rem;
     font-size: var(--h1-font-size-desktop);
+    color: var(--title-color);
 }
 
 h2
 {
     margin-bottom: 1.9rem;
     font-size: var(--h2-font-size-desktop);
+    color: var(--title-color);
 }
 
 h3
 {
     margin-bottom: 2rem;
     font-size: var(--h3-font-size-desktop);
+    color: var(--title-color);
 }
 
 .url-with-icon
