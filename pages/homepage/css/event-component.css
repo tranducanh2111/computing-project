@@ -35,7 +35,7 @@
 {
     color: var(--title-color);
     font-size: 2.25rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 #event-component .event-component-header .url-with-icon
@@ -60,5 +60,40 @@
     #event-component article
     {
         margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 550px)
+{
+    #event-component
+    {
+        display: grid;
+        grid-template-areas: 
+            "heading heading"
+            "article1 article2";
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
+    }
+
+    #event-component .event-component-header
+    {
+        grid-area: heading;
+        margin-bottom: 3rem;
+    }
+
+    #event-component article:nth-child(1)
+    {
+        grid-area: article1;
+    }
+
+    #event-component article:nth-child(2)
+    {
+        grid-area: article2;
+    }
+
+    #event-component .event-component-header h2
+    {
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
     }
 }
