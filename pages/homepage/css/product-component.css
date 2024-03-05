@@ -6,7 +6,7 @@
         "product visualization";
     grid-template-columns: 30% 70%;
     padding: 0 3.75rem;
-    max-width: 80rem;
+    max-width: 72rem;
     margin: 2rem auto 0 auto;
 }
 
@@ -45,7 +45,7 @@
     grid-area: visualization;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .product-component-visualization object
