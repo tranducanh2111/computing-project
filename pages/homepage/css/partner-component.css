@@ -60,3 +60,11 @@
 {
     width: min(50%, 138px);
 }
+
+@media screen and (max-width: 550px)
+{
+    #partner-component .partner-component-header h2
+    {
+        font-size: 1rem;
+    }
+}
