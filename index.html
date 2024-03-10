@@ -18,8 +18,14 @@
     <!-- NAVIGATION COMPONENT -->
     <header class="header" id="header">
         <nav class="nav-component">
+            <!-- Logo -->
             <a href="#" class="nav-component-logo">Bubble</a>
-
+            <!-- Hamburger Button -->
+            <input type="checkbox" id="menu-toggle" class="nav-toggle-input">
+            <label for="menu-toggle" class="nav-component-toggle">
+                <span class="hamburger"></span>
+            </label>
+            <!-- Navigation Item List -->
             <div class="nav-component-menu" id="nav-component-menu">
                 <ul class="nav-component-list">
                     <li class="nav-component-item">
@@ -35,30 +41,9 @@
                         <a href="pages/aboutUs.html" class="nav-component-link">About Us</a>
                     </li>
                 </ul>
-                <!-- Close button -->
-                <div class="nav-component-close" id="nav-component-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
-
-            <div class="nav-component-actions">
-                <!-- Search button -->
-                <i class="ri-search-line nav-component-search" id="search-btn"></i>
-                <!-- Toggle button -->
-                <div class="nav-component-toggle" id="nav-component-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
             </div>
         </nav>
     </header>
-
-    <div class="search" id="search">
-        <form action="" class="search-form">
-            <i class="ri-search-line search-icon"></i>
-            <input type="search" placeholder="What are you looking for?" id="search-input">
-        </form>
-        <i class="ri-close-line search-close" id="search-close"></i>
-    </div>
 
     <!-- MAIN COMPONENT -->
     <main>
@@ -236,6 +221,6 @@
     </footer>
 
     <!--=============== MAIN JS ===============-->
-    <script src="js/component/navbar.js"></script>
+    <!-- <script src="js/component/navbar.js"></script> -->
 </body>
 </html>

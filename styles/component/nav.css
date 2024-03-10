@@ -31,12 +31,6 @@
     }
 }
 
-#search-input
-{
-    border: none;
-    outline: none;
-}
-
 .nav-component ul
 {
     list-style: none;
@@ -50,33 +44,6 @@
 
 }
 
-.search
-{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
-    background-color: hsla(230, 75%, 15%, .1);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px); /* For safari */
-    padding: 8rem 1.5rem 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .4s;
-}
-
-.search-close
-{
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    font-size: 1.5rem;
-    color: var(--title-color);
-    cursor: pointer;
-}
-
 /*=============== HEADER & NAV ===============*/
 .header
 {
@@ -86,7 +53,7 @@
     width: 100%;
     box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
     z-index: 100;
-    background: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient( to bottom, rgba(255,255,255,0.85), rgb(255,255,255));
     transition: background-color 0.4s ease;
 }
 
@@ -104,22 +71,7 @@
     transition: color .4s;
 }
 
-.nav-component-actions
-{
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-}
-
-.nav-component-search, .nav-component-toggle, .nav-component-close
-{
-    font-size: 1.25rem;
-    color: var(--title-color);
-    cursor: pointer;
-    transition: color .4s;
-}
-
-:is(.nav-component-logo, .nav-component-search, .nav-component-toggle, .nav-component-link):hover
+:is(.nav-component-logo, .nav-component-toggle, .nav-component-link):hover
 {
     color: var(--first-color);
 }
@@ -134,7 +86,8 @@
         left: 0;
         box-shadow: 0 8px 16px hsla(230, 75%, 32%, .15);
         width: 100%;
-        padding-block: 4.5rem 4rem;
+        padding-block: 2rem 4rem;
+        opacity: 0.85;
         transition: top .4s;
     }
 }
@@ -154,90 +107,13 @@
     transition: color .4s;
 }
 
-.nav-component-close
-{
-    position: absolute;
-    top: 1.15rem;
-    right: 1.5rem;
-}
-
 /* Show menu */
 .show-menu
 {
     top: 0;
 }
 
-/*=============== SEARCH ===============*/
-.search-form
-{
-    display: flex;
-    align-items: center;
-    column-gap: .5rem;
-    background-color: var(--container-color);
-    box-shadow: 0 8px 32px hsla(230, 75%, 15%, .2);
-    padding-inline: 1rem;
-    border-radius: .5rem;
-    transform: translateY(-1rem);
-    transition: transform .4s;
-}
-
-.search-icon
-{
-    font-size: 1.25rem;
-    color: var(--title-color);
-}
-
-#search-input
-{
-    width: 100%;
-    padding-block: 1rem;
-    background-color: var(--container-color);
-    color: var(--text-color-search-bar);
-}
-
-#search-input::placeholder
-{
-    color: var(--text-color-search-bar);
-}
-
-/* Show search */
-.show-search
-{
-    opacity: 1;
-    pointer-events: initial;
-}
-
-.show-search .search-form
-{
-    transform: translateY(0);
-}
-
 /*=============== BREAKPOINTS ===============*/
-/* For medium devices */
-@media screen and (min-width: 576px)
-{
-    .search
-    {
-        padding-top: 10rem;
-    }
-
-    .search-form
-    {
-        max-width: 450px;
-        margin-inline: auto;
-    }
-
-    .search-close
-    {
-        width: max-content;
-        top: 5rem;
-        left: 0;
-        right: 0;
-        margin-inline: auto;
-        font-size: 2rem;
-    }
-}
-
 /* For large devices */
 @media screen and (min-width: 1023px)
 {
@@ -267,4 +143,77 @@
     {
         margin-inline: auto;
     }
+}
+
+@media screen and (max-width: 1023px)
+{
+    .nav-component-toggle {
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+/* Hide default checkbox */
+.nav-toggle-input {
+    position: absolute;
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thickness of each line */
+    background-color: black; /* Adjust color as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thickness of each line */
+    background-color: black; /* Adjust color as needed */
+    left: 0;
+}
+
+.hamburger::before {
+    top: -7px; /* Adjust spacing between lines */
+}
+
+.hamburger::after {
+    bottom: -7px; /* Adjust spacing between lines */
+}
+
+/* Rotate lines when checkbox is checked */
+.nav-toggle-input:checked + .nav-component-toggle .hamburger {
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.nav-toggle-input:checked + .nav-component-toggle .hamburger::before {
+    top: 0;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.nav-toggle-input:checked + .nav-component-toggle .hamburger::after {
+    bottom: 0;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+/* Show menu when checkbox is checked */
+.nav-toggle-input:checked ~ .nav-component-menu {
+    top: 56px; /* Adjust this value to match your header height */
+}
+
+/* Hide menu when checkbox is unchecked */
+.nav-toggle-input:not(:checked) ~ .nav-component-menu {
+    top: -100%; /* Move menu off-screen */
 }
