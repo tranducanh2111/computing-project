@@ -5,20 +5,22 @@
 
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(230, 75%, 56%);
-    --title-color: hsl(230, 75%, 15%);
-    --text-color: hsl(230, 12%, 40%);
-    --body-color: hsl(230, 100%, 98%);
-    --container-color: hsl(230, 100%, 97%);
-    --border-color: hsl(230, 25%, 80%);
+    --first-color: #0065FF;
+    --second-color: #2684FF;
+    --title-color: #253858;
+    --text-color: #091E42;
+    --article-url-color: #0052CC;
 
     /*========== Font and typography ==========*/
     --body-font: "Segoe UI", "Roboto", "Fira Sans", "Droid Sans", "Helvetica Neue";
     --normal-font-size: 1rem;
     --h1-font-size-desktop: 2.75rem;
     --h1-font-size-mobile: 2.35rem;
+    --h2-font-size-desktop: 2.25rem;
 
-    --h3-font-size-desktop: 1.3rem;
+    --h2-font-size-mobile: 0;
+
+    --h3-font-size-desktop: 1.5rem;
     --h3-font-size-mobile: 1rem;
 
     /*========== Font weight ==========*/
@@ -57,12 +59,29 @@ h1
 {
     margin-bottom: 1.5rem;
     font-size: var(--h1-font-size-desktop);
+    color: var(--title-color);
+}
+
+h2
+{
+    margin-bottom: 1.9rem;
+    font-size: var(--h2-font-size-desktop);
+    color: var(--title-color);
 }
 
 h3
 {
     margin-bottom: 2rem;
     font-size: var(--h3-font-size-desktop);
+    color: var(--title-color);
+}
+
+.url-with-icon
+{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: fit-content;
 }
 
 /* Responsive for Mobile */

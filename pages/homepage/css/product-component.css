@@ -1,0 +1,97 @@
+@import url('../../../css/main.css');
+
+#product-component
+{
+    display: grid;
+    grid-template-areas:
+        "heading heading"
+        "product visualization";
+    grid-template-columns: 30% 70%;
+    padding: 0 3.75rem;
+    max-width: 72rem;
+    margin: 2rem auto 0 auto;
+}
+
+#product-component h2
+{
+    grid-area: heading;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.product-content-header .url-with-icon a
+{
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+}
+
+/* Product Item Container */
+.product-item-container
+{
+    grid-area: product;
+}
+
+.product-content-header
+{
+    margin-bottom: 1.5rem;
+}
+
+.product-content-header .url-with-icon object
+{
+    margin-left: 8px;
+}
+
+/* Product Visualization */
+.product-component-visualization
+{
+    grid-area: visualization;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.product-component-visualization object
+{
+    width: 80%;
+}
+
+/* Product Card */
+.product-card div
+{
+    display: inline-block;
+}
+
+.product-card-icon object
+{
+    width: 4.5rem;
+    margin-right: 2rem;
+}
+
+.product-card
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2.25rem;
+}
+
+@media screen and (max-width: 711px)
+{
+    #product-component
+    {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .product-content-header h3
+    {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    #product-component h2
+    {
+        font-size: 1.5rem;
+    }
+}

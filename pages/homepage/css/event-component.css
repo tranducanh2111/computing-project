@@ -1,0 +1,106 @@
+@import url('../../../css/main.css');
+
+#event-component
+{
+    max-width: 72rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    padding: 0 3.75rem;
+    margin: 4rem auto 0 auto;
+}
+
+/* Event Item */
+#event-component article img
+{
+    width: 100%;
+}
+
+/* Event Component Header */
+#event-component .event-component-header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#event-component .event-component-header h3
+{
+    color: var(--second-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#event-component .event-component-header h2
+{
+    color: var(--title-color);
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+#event-component .event-component-header .url-with-icon
+{
+    align-self: flex-start;
+}
+
+#event-component .event-component-header .url-with-icon a
+{
+    color: var(--article-url-color);
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 550px)
+{
+    #event-component
+    {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    
+    #event-component .event-component-header h2
+    {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #event-component article
+    {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 550px)
+{
+    #event-component
+    {
+        display: grid;
+        grid-template-areas: 
+            "heading heading"
+            "article1 article2";
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
+    }
+
+    #event-component .event-component-header
+    {
+        grid-area: heading;
+        margin-bottom: 3rem;
+    }
+
+    #event-component article:nth-child(1)
+    {
+        grid-area: article1;
+    }
+
+    #event-component article:nth-child(2)
+    {
+        grid-area: article2;
+    }
+
+    #event-component .event-component-header h2
+    {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

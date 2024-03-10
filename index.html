@@ -7,8 +7,12 @@
     <!-- Icon CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="pages/homepage/css/hero-component.css">
     <link rel="stylesheet" href="css/component/nav.css">
+    <link rel="stylesheet" href="pages/homepage/css/hero-component.css">
+    <link rel="stylesheet" href="pages/homepage/css/product-component.css">
+    <link rel="stylesheet" href="pages/homepage/css/partner-component.css">
+    <link rel="stylesheet" href="pages/homepage/css/event-component.css">
+    <link rel="stylesheet" href="pages/homepage/css/career-component.css">
 </head>
 <body>
     <!-- NAVIGATION COMPONENT -->
@@ -66,8 +70,8 @@
             <div class="hero-card">
                 <h1>Impossible Alone.</h1>
                 <h3>See how collaboration makes the impossible, possible.</h3>
-                <span>
-                    <object type="image/svg+xml" data="image/icon/play.svg" width="24" height="28"></object>
+                <span class="url-with-icon">
+                    <object type="image/svg+xml" data="image/icons/play.svg" width="24" height="28"></object>
                     <a href="about.html">About Us</a>
                 </span>
             </div>
@@ -81,70 +85,107 @@
                 <a href="jobs.html">Join Us!</a>
             </div>
         </section>
-        
+
         <!-- Product Component -->
         <section id="product-component">
             <h2>Bubble solutions are designed for all types of work</h2>
-            <span>
-                <div>
-                    <div>
-                        <h3>Make work flow across teams while connecting back to company goals</h3>
-                        <button><a href="">Work differently, together.</a></button>
-                    </div>
-                    <div class="product-card-container">
-                        <article class="product-card">
-                            <figure></figure>
-                            <div>
-                                <h4>Confluence</h4>
-                                <p>Content collaboration</p>
-                            </div>
-                        </article>
-                        <article class="product-card">
-                            <figure></figure>
-                            <div>
-                                <h4>Trello</h4>
-                                <p>Visal project management</p>
-                            </div>
-                        </article><article class="product-card">
-                            <figure></figure>
-                            <div>
-                                <h4>Jira Work Management</h4>
-                                <p>Business team collaboration</p>
-                            </div>
-                        </article><article class="product-card">
-                            <figure></figure>
-                            <div>
-                                <h4>Atlas</h4>
-                                <p>Teamwork directory</p>
-                            </div>
-                        </article>
-                    </div>
+            <div class="product-component-visualization">
+                <object type="image/svg+xml" data="image/homepage/product-component-visualization.svg"></object>
+            </div>
+            <div class="product-content">
+                <div class="product-content-header">
+                    <h3>Make work flow across teams while connecting back to company goals</h3>
+                    <span class="url-with-icon">
+                        <a href="">Work differently, together.</a>
+                        <object type="image/svg+xml" data="image/icons/arrow-right.svg" width="20" height="20"></object>
+                    </span>
                 </div>
-                <figure></figure>
-            </span>
+                <div class="product-card-container">
+                    <article class="product-card">
+                        <div class="product-card-icon">
+                            <object type="image/svg+xml" data="image/icons/users-alt.svg"></object>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Confluence</h4>
+                            <p>Content collaboration</p>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card-icon">
+                            <object type="image/svg+xml" data="image/icons/chart-histogram.svg"></object>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Trello</h4>
+                            <p>Visual project management</p>
+                        </div>
+                    </article><article class="product-card">
+                        <div class="product-card-icon">
+                            <object type="image/svg+xml" data="image/icons/headset.svg"></object>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Jira Work Management</h4>
+                            <p>Business team collaboration</p>
+                        </div>
+                    </article><article class="product-card">
+                        <div class="product-card-icon">
+                            <object type="image/svg+xml" data="image/icons/rocket-lunch.svg"></object>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Atlas</h4>
+                            <p>Teamwork directory</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <!-- Partner Component -->
         <section id="partner-component">
-            <div>
+            <div class="partner-component-header">
                 <h2>Join the 250,000+ companies that use our software to power team collaboration</h2>
-                <button><a href="">See all customers</a></button>
+                <div class="url-with-icon">
+                    <a href="">See all customers</a>
+                    <object type="image/svg+xml" data="image/icons/arrow-right.svg" width="12" height="12"></object>
+                </div>
             </div>
-            <span>
-                <figure></figure>
-                <figure></figure>
-                <figure></figure>
-                <figure></figure>
-                <figure></figure>
-            </span>
+            <div class="logo-list">
+                <div>
+                    <img src="image/homepage/adobe.png" alt="Adobe">
+                    <img src="image/homepage/kpmg.png" alt="KPMG">
+                    <img src="image/homepage/commonwealth-bank.png" alt="Commonwealth Bank">
+                    <img src="image/homepage/xero.png" alt="Xero">
+                    <img src="image/homepage/shell.png" alt="Shell">
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Component -->
+        <section id="event-component">
+            <div class="event-component-header">
+                <h3>EVENTS</h3>
+                <h2>Hear from today's fearless builders and innovators</h2>
+                <div class="url-with-icon"><a href="">Learn more</a></div>
+            </div>
+            <article class="event-item">
+                <img src="image/homepage/event-item-1.png" alt="Data-mesh Event">
+            </article>
+            <article class="event-item">
+                <img src="image/homepage/event-item-2.png" alt="Cloud World Tour">
+            </article>
         </section>
 
         <!-- Careers Component -->
         <section id="careers-component">
-            <h3>CAREERS</h3>
-            <h2>We can&apos;t do it alone</h2>
-            <p>We have an ambitious road ahead, and we&apos;re looking for people to join our global team to help shape the future of Bubble.</p>
-            <button><a href="">Join the team</a></button>
+            <div class="careers-component-content">
+                <h3>CAREERS</h3>
+                <h2>We can&apos;t do it alone</h2>
+                <p>We have an ambitious road ahead, and we&apos;re looking for people to join our global team to help shape the future of Bubble.</p>
+                <button type="button"><a href="pages/Jobs/jobs.html">Join the team</a></button>
+            </div>
+            <div id="career-visulization">
+                <object type="image/svg+xml" data="image/homepage/career-visualization-1.svg"></object>
+                <object type="image/svg+xml" data="image/homepage/career-visualization-2.svg"></object>
+            </div>
         </section>
     </main>
 
