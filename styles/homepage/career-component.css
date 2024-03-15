@@ -49,6 +49,11 @@
     color: white;
 }
 
+#careers-component .careers-component-content button:hover
+{
+    background-color: var(--button-hover-color);
+}
+
 /* Career Visualization */
 #careers-component #career-visulization
 {

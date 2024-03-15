@@ -25,6 +25,11 @@
     font-weight: var(--font-medium);
 }
 
+.product-content-header .url-with-icon a:hover
+{
+    color: var(--button-hover-color);
+}
+
 /* Product Item Container */
 .product-item-container
 {

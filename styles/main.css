@@ -9,6 +9,7 @@
     --second-color: #2684FF;
     --title-color: #253858;
     --text-color: #091E42;
+    --button-hover-color: #0047B3;
     --article-url-color: #0052CC;
 
     /*========== Font and typography ==========*/
@@ -82,6 +83,12 @@ h3
     align-self: center;
     justify-content: center;
     width: fit-content;
+}
+
+.url-with-icon:hover object {
+    fill: var(--button-hover-color);
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
 }
 
 /* Responsive for Mobile */

@@ -3,7 +3,6 @@
 :root
 {
     --hero-component-height: 36rem;
-    --text-color: white;
 }
 
 #hero-component
@@ -98,6 +97,12 @@ video
     color: #0052CC;
     background-color: transparent;
     font-size: 1.1rem;
+}
+
+.hero-component-banner-url a:hover
+{
+    color: var(--button-hover-color);
+    font-weight: 500;
 }
 
 /* Responsive for Mobile */

@@ -1,0 +1,155 @@
+@import url('../../../css/main.css');
+
+footer
+{
+    background-color: #F4F5F7;
+
+}
+
+/* Footer Container */
+footer .footer-container
+{
+    display: grid;
+    grid-template-areas: "logo menu menu menu menu";
+    gap: 2pc;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding-inline: 3.75rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Footer Container Logo */
+footer .footer-container .footer-logo
+{
+    grid-area: logo;
+}
+
+footer .footer-container .footer-logo img
+{
+    height: 2.5rem;
+}
+
+/* Footer Container - Menu Container */
+footer .footer-container .footer-menu-container
+{
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 2pc;
+}
+
+footer .footer-container .footer-menu-container .footer-menu h3
+{
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+}
+
+footer ul
+{
+    list-style: none;
+}
+
+footer li
+{
+    height: 1.5rem;
+    font-size: 0.875rem;
+}
+
+footer li a
+{
+    color: #42526E;
+}
+
+:is(footer a):hover
+{
+    color: var(--first-color);
+}
+
+hr
+{
+    background-color: #42526E;
+    height: 0.5px;
+    width: 100%;
+    opacity: 0.3;
+}
+
+/* Footer Copyright */
+footer .footer-copyright
+{
+    max-width: 72rem;
+    margin: 0 auto;
+    padding-top: 2pc;
+    padding-bottom: 1pc;
+    padding-inline: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-copyright ul
+{
+    display: inline-flex;
+    gap: 1.5pc;
+}
+
+footer img:hover
+{
+    scale: 1.1;
+    transition: scale 0.3s ease-in-out;
+}
+
+/* For laptop */
+@media screen and (max-width: 1023px)
+{
+    footer .footer-container
+    {
+        grid-template-areas: 
+        "logo"
+        "menu";
+    }
+}
+
+/* For tablet and mobile */
+@media screen and (max-width: 727px)
+{
+    footer .footer-container
+    {
+        gap: 3pc;
+    }
+
+    footer .footer-container .footer-menu-container
+    {
+        grid-template-areas:
+            "menu-item1 menu-item2"
+            "menu-item3 menu-item4";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .footer-container .footer-menu:nth-child(1)
+    {
+        grid-area: menu-item1;
+    }
+
+    footer .footer-container .footer-menu:nth-child(2)
+    {
+        grid-area: menu-item2;
+    }
+
+    footer .footer-container .footer-menu:nth-child(3)
+    {
+        grid-area: menu-item3;
+    }
+
+    footer .footer-container .footer-menu:nth-child(4)
+    {
+        grid-area: menu-item4;
+    }
+
+    /* Footer Copyright Mobile */
+    footer .footer-copyright ul
+    {
+        display: block;
+    }
+}

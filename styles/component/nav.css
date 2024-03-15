@@ -1,28 +1,27 @@
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root
 {
     --header-height: 3.5rem;
 
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
+    /* Colors */
     --title-color: hsl(230, 75%, 15%);
     --text-color-search-bar: hsl(230, 12%, 40%);
     --container-color: hsl(230, 100%, 97%);
     --border-color: hsl(230, 25%, 80%);
 
-    /*========== Font and typography ==========*/
+    /* Font and typography */
     --normal-font-size: 1rem;
 
-    /*========== Font weight ==========*/
+    /* Font weight */
     --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== z index ==========*/
+    /* z index */
     --z-modal: 50;
 }
 
-/*========== Responsive typography ==========*/
+/* Responsive typography */
 @media screen and (min-width: 1023px)
 {
     :root
@@ -36,7 +35,7 @@
     list-style: none;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* REUSABLE CSS CLASSES */
 .nav-component
 {
     max-width: 1120px;
@@ -44,7 +43,7 @@
 
 }
 
-/*=============== HEADER & NAV ===============*/
+/* HEADER & NAV */
 .header
 {
     position: fixed;
@@ -53,7 +52,7 @@
     width: 100%;
     box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
     z-index: 100;
-    background-image: linear-gradient( to bottom, rgba(255,255,255,0.85), rgb(255,255,255));
+    background-image: linear-gradient( to bottom, rgba(255,255,255,0.9), rgb(255,255,255));
     transition: background-color 0.4s ease;
 }
 
@@ -85,9 +84,10 @@
         top: -100%;
         left: 0;
         box-shadow: 0 8px 16px hsla(230, 75%, 32%, .15);
+        background-color: white;
         width: 100%;
         padding-block: 2rem 4rem;
-        opacity: 0.85;
+        opacity: 0.97;
         transition: top .4s;
     }
 }
@@ -113,7 +113,7 @@
     top: 0;
 }
 
-/*=============== BREAKPOINTS ===============*/
+/* BREAKPOINTS */
 /* For large devices */
 @media screen and (min-width: 1023px)
 {
@@ -167,7 +167,7 @@
     position: absolute;
     width: 100%;
     height: 2px; /* Thickness of each line */
-    background-color: black; /* Adjust color as needed */
+    background-color: black;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -178,16 +178,16 @@
     position: absolute;
     width: 100%;
     height: 2px; /* Thickness of each line */
-    background-color: black; /* Adjust color as needed */
+    background-color: black;
     left: 0;
 }
 
 .hamburger::before {
-    top: -7px; /* Adjust spacing between lines */
+    top: -7px;
 }
 
 .hamburger::after {
-    bottom: -7px; /* Adjust spacing between lines */
+    bottom: -7px;
 }
 
 /* Rotate lines when checkbox is checked */
@@ -210,7 +210,7 @@
 
 /* Show menu when checkbox is checked */
 .nav-toggle-input:checked ~ .nav-component-menu {
-    top: 56px; /* Adjust this value to match your header height */
+    top: 56px;
 }
 
 /* Hide menu when checkbox is unchecked */

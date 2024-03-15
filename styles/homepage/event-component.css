@@ -48,6 +48,12 @@
     color: var(--article-url-color);
 }
 
+#event-component .event-component-header .url-with-icon a:hover
+{
+    color: var(--button-hover-color);
+    font-weight: 500;
+}
+
 /* Responsive for Mobile */
 @media screen and (max-width: 550px)
 {

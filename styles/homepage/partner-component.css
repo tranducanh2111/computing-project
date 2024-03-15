@@ -39,6 +39,11 @@
     margin-left: 8px;
 }
 
+#partner-component .partner-component-header .url-with-icon a:hover
+{
+    color: var(--button-hover-color);
+}
+
 /* Logo Container Section */
 #partner-component .logo-list
 {
