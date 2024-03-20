@@ -59,12 +59,12 @@
                 <!-- First Name -->
                 <div id="first_name" class="input-text">
                     <label for="fname" class="section-label">First Name</label>
-                    <input type="text" id="fname" name="fname" placeholder="Enter First Name" pattern="[A-Za-z]{1,20}" required>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" pattern="[A-Za-z]{1,20}" required>
                 </div>
                 <!-- Last Name -->
                 <div id="last_name" class="input-text">
                     <label for="lname" class="section-label">Last Name</label>
-                    <input type="text" id="lname" name="lname" placeholder="Enter Last Name" pattern="[A-Za-z]{1,20}" required>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" pattern="[A-Za-z]{1,20}" required>
                 </div>
                 <!-- Date of Birth -->
                 <div id="date_of_birth" class="input-text">
@@ -77,15 +77,15 @@
                         <legend>Gender</legend>
                         <div class="input-option-container">
                             <span>
-                                <input type="radio" id="male" name="gender" value="Male">
+                                <input type="radio" id="male" name="gender" value="Male" required>
                                 <label for="male" class="input-label">Male</label>
                             </span>
                             <span>
-                                <input type="radio" id="female" name="gender" value="Female">
+                                <input type="radio" id="female" name="gender" value="Female" required>
                                 <label for="female" class="input-label">Female</label>
                             </span>
                             <span>
-                                <input type="radio" id="other" name="gender" value="Other">
+                                <input type="radio" id="other" name="gender" value="Other" required>
                                 <label for="other" class="input-label">Other</label>
                             </span>
                         </div>
@@ -94,12 +94,12 @@
                 <!-- Address -->
                 <div id="address-container" class="input-text">
                     <label for="address" class="section-label">Address</label>
-                    <input type="text" id="address" name="address" placeholder="Enter Street Address" maxlength="40" required>
+                    <input type="text" id="address" name="address" placeholder="Enter street address" maxlength="40" required>
                 </div>
                 <!-- Suburb -->
                 <div id="suburb-container" class="input-text">
                     <label for="suburb" class="section-label">Suburb</label>
-                    <input type="text" id="suburb" name="suburb" placeholder="Enter Suburb/Town" maxlength="40" required>
+                    <input type="text" id="suburb" name="suburb" placeholder="Enter suburb" maxlength="40" required>
                 </div>
                 <!-- State -->
                 <div id="state-container">
@@ -122,12 +122,12 @@
                 <!-- Postcode -->
                 <div id="postcode-container" class="input-text">
                     <label for="postcode" class="section-label">Postcode</label>
-                    <input type="text" id="postcode" name="postcode" placeholder="Enter Postcode" pattern="[A-Za-z0-9]{4}" required>
+                    <input type="text" id="postcode" name="postcode" placeholder="Enter postcode" pattern="[0-9]{4}" required>
                 </div>
                 <!-- Email -->
                 <div id="email-container" class="input-text">
                     <label for="email" class="section-label">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                 </div>
                 <!-- Mobile -->
                 <div id="mobile-container" class="input-text">
@@ -141,7 +141,7 @@
                     <div class="input-option-container">
                         <span>
                             <input type="checkbox" id="html" name="html" value="HTML">
-                            <label for="html" class="input-label"> HTML</label>
+                            <label for="html" class="input-label">HTML</label>
                         </span>
                         <span>
                             <input type="checkbox" id="css" name="css" value="CSS">
@@ -160,7 +160,7 @@
                             <label for="MySQL" class="input-label">MySQL</label>
                         </span>
                         <span>
-                            <input type="checkbox" id="otherskill" name="otherskill" value="Other Skill">
+                            <input type="checkbox" id="otherskill" name="otherskill" value="Other Skill" checked>
                             <label for="otherskill" class="input-label">Other Skills</label>
                         </span>
                     </div>
