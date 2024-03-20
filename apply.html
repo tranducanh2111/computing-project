@@ -10,6 +10,8 @@
     <!-- Component CSS -->
     <link rel="stylesheet" href="styles/component/nav.css">
     <link rel="stylesheet" href="styles/component/footer.css">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="styles/apply/form.css">
 </head>
 <body>
     <!-- NAVIGATION COMPONENT -->
@@ -42,83 +44,129 @@
         </nav>
     </header>
 
-    <h1 style="background-color:tomato;">HEADER</h1>
-    <h1 style="text-align: center;">Application Form</h1>
-    <form action="http://mercury.swin.edu.au/it000000/formtest.php"  id="form1" method="post" >
+    <!-- FORM COMPONENT-->
+    <main>
+        <div class="form-container">
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" id="form1" method="post">
+                <div id="heading">
+                    <h1>Register your interest!</h1>
+                </div>
+                <!-- text -->
+                <div id="job-reference" class="input-text">
+                    <label for="jobnum" class="section-label">Job Reference Number</label>
+                    <input type="text" id="jobnum" name="jobnum" placeholder="Enter Job Reference Number" pattern="[A-Za-z0-9]{5}" required>
+                </div>
+                <div id="first_name" class="input-text">
+                    <label for="fname" class="section-label">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter First Name" pattern="[A-Za-z]{1,20}" required>
+                </div>
+                <div id="last_name" class="input-text">
+                    <label for="lname" class="section-label">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter Last Name" pattern="[A-Za-z]{1,20}" required>
+                </div>
+                <div id="date_of_birth" class="input-text">
+                    <label for="datebirth" class="section-label">Date of Birth</label>
+                    <input type="date" id="datebirth" name="datebirth" value="Birth" required>
+                </div>
+                <div id="gender">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <div class="input-option-container">
+                            <span>
+                                <input type="radio" id="male" name="gender" value="Male">
+                                <label for="male" class="input-label">Male</label>
+                            </span>
+                            <span>
+                                <input type="radio" id="female" name="gender" value="Female">
+                                <label for="female" class="input-label">Female</label>
+                            </span>
+                            <span>
+                                <input type="radio" id="other" name="gender" value="Other">
+                                <label for="other" class="input-label">Other</label>
+                            </span>
+                        </div>
+                    </fieldset>
+                </div>
 
-        <!-- text -->
-        <label for="jobnum">Job Reference Number:</label>
-        <input type="text" id="jobnum" name="jobnum" placeholder="Enter Job Reference Number" size="50">
-        <label>Exactly 5 alphanumeric character</label><br>
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" placeholder="Enter First Name" size="50" maxlength="20">
-        <label>Max 20 character</label><br>
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" placeholder="Enter Last Name" size="50">
-        <label>Max 20 character</label><br>
-
-        <!-- date -->
-        <label for="datebirth">Date of Birth:</label>
-        <input type="date" id="datebirth" name="datebirth" value="Birth"><br>
-
-        <!-- gender radiobutton -->
-        <label for="gender">Gender:</label>
-        <label for="male">Male</label>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="female">Female</label>
-        <input type="radio" id="female" name="gender"  value="Female">
-        <label for="other">Other</label>
-        <input type="radio" id="other" name="gender"  value="Other"><br>
-        
-
-        <!-- text -->
-        <label for="address">Street Address:</label>
-        <input type="text" id="address" name="address" placeholder="Enter Street Address" size="50">
-        <label>Max 40 character</label><br>
-        <label for="suburb">Suburb/Town:</label>
-        <input type="text" id="suburb" name="suburb" placeholder="Enter Suburb/Town" size="50"><br>
-        <label for="state">State:</label>
-
-        <!-- dropdown box for state -->
-        <select name="state" id="state" value="state">
-            <option value="" disabled selected>--Select State--</option>
-            <option value="Queensland">Queensland</option>
-            <option value="Western Australia">Western Australia</option>
-            <option value="Victoria">Victoria</option>
-            <option value="South Australia">South Australia</option>
-            <option value="New South Wales">New South Wales</option>
-            <option value="Northern Teritory">Northern Teritory</option>
-        </select><br>
-
-        <!-- text -->
-        <label for="postcode">Postcode:</label>
-        <input type="text" id="postcode" name="postcode" placeholder="Enter Postcode" size="50" pattern="[0-9]{8,12}">
-        <label>Max 4 number</label><br>
-        <label for="email">Email Address:</label>
-        <input type="text" id="email" name="email" placeholder="Enter your Email Address" size="50"><br>
-        <label for="phonenumber">Phone Number:</label>
-        <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter your Phone Number" size="50">
-        <label>(8-12 digits of spaces)</label><br>
-
-
-        <!-- checkbox for skill list -->
-        <label for="skill">Skill List:</label>
-        <label for="html"> HTML</label>
-        <input type="checkbox" id="html" name="skill" value="html">
-        <label for="css">CSS</label>
-        <input type="checkbox" id="css" name="skill" value="css">
-        <label for="javascript">JavaScript</label>
-        <input type="checkbox" id="javascript" name="skill" value="javascript">
-        <label for="PHP">PHP</label>
-        <input type="checkbox" id="PHP" name="skill" value="PHP"><br>
-
-
-
-        <!-- textarea -->
-        <label for="aboutme">About You:</label>
-        <textarea name="aboutme" placeholder="Enter Additional About You" rows="10" cols="30"></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+                <div id="address-container" class="input-text">
+                    <label for="address" class="section-label">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter Street Address" maxlength="40" required>
+                </div>
+                <div id="suburb-container" class="input-text">
+                    <label for="suburb" class="section-label">Suburb</label>
+                    <input type="text" id="suburb" name="suburb" placeholder="Enter Suburb/Town" maxlength="40" required>
+                </div>
+                <div id="state-container">
+                    <label for="state" class="section-label">State</label>
+                    <br>
+                    <div class="custom-select">
+                        <select name="state" id="state" class="input-text" value="state" required>
+                            <option value="" disabled selected>--Select State--</option>
+                            <option value="VIC">VIC</option>
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="ACT">ACT</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="postcode-container" class="input-text">
+                    <label for="postcode" class="section-label">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" placeholder="Enter Postcode" pattern="[A-Za-z0-9]{4}" required>
+                </div>
+                <div id="email-container" class="input-text">
+                    <label for="email" class="section-label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div id="mobile-container" class="input-text">
+                    <label for="mobil" class="section-label">Mobile</label>
+                    <input type="text" id="mobile" name="mobile" pattern="[0-9\s]{8,12}" placeholder="Enter your mobile number" required>
+                </div>
+                <div id="skill_list">
+                    <label for="skill" class="section-label">Skill List</label>
+                    <br>
+                    <div class="input-option-container">
+                        <span>
+                            <input type="checkbox" id="html" name="html" value="HTML">
+                            <label for="html" class="input-label"> HTML</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="css" name="css" value="CSS">
+                            <label for="css" class="input-label">CSS</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="javascript" name="javascript" value="JavaScript">
+                            <label for="javascript" class="input-label">JavaScript</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="PHP" name="PHP" value="PHP">
+                            <label for="PHP" class="input-label">PHP</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="MySQL" name="MySQL" value="MySQL">
+                            <label for="MySQL" class="input-label">MySQL</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="otherskill" name="otherskill" value="Other Skill">
+                            <label for="otherskill" class="input-label">Other Skills</label>
+                        </span>
+                    </div>
+                </div>
+                <div id="other_skill_container" class="input-text">
+                    <label for="other_skill" class="section-label">Other Skills</label>
+                    <br>
+                    <textarea name="other_skill" placeholder="Enter Other Skills" rows="10" cols="30"></textarea>
+                </div>
+                <div id="button-container">
+                    <button type="reset" id="reset">RESET</button>
+                    <button type="submit" id="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </main>
 
     <!-- FOOTER COMPONENT -->
     <footer>
