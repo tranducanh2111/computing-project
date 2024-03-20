@@ -1,0 +1,294 @@
+@import url('../../../css/main.css');
+
+
+main
+{
+    padding-top: calc(88px + 48px);
+    padding: calc(88px + 4rem) 2pc;
+    padding-bottom: 4rem;
+    background: linear-gradient(80deg, var(--first-color) 1%, #deebff 50%)
+}
+
+/* Form container size */
+main .form-container
+{
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+/* Form Component */
+main .form-container form
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2pc;
+    background: rgba(255,255,255,0.3);
+    padding: 3em;
+    border-radius: 12px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container form h1
+{
+    background: -webkit-linear-gradient(var(--first-color), var(--second-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.6;
+    margin: 0 auto 3rem auto;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Form input container area*/
+.form-container form #heading
+{
+    grid-column: 1 / span 2;
+}
+
+.form-container form #job-reference
+{
+    grid-column: 1 / span 2;
+}
+
+.form-container form #first_name
+{
+    grid-column: 1 / span 1;
+}
+
+.form-container form #last_name
+{
+    grid-column: 2 / span 1;
+}
+
+.form-container form #date_of_birth
+{
+    grid-column: 1 / span 1;
+}
+
+.form-container form #gender
+{
+    grid-column: 2 / span 1;
+}
+
+.form-container form #skill_list
+{
+    grid-column: 1 / span 2;
+}
+
+.form-container form #other_skill_container
+{
+    grid-column: 1 / span 2;
+}
+
+.form-container form #button-container
+{
+    grid-column: 1 / span 2;
+}
+
+/* Form input fields */
+main .form-container form .input-option-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container form input, main .form-container form textarea
+{
+    background: transparent;
+    margin-bottom: 2rem;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: var(--text-color);
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+/* Form input fields (text input only) */
+.form-container form .input-text input
+{
+    width: 100%;
+    padding: 0.75rem 1rem;
+}
+
+main .form-container form .section-label, main .form-container form legend
+{
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: var(--title-color);
+}
+
+/* Form input fields (radio & checkbox input only) */
+main .form-container form .input-label
+{
+    display: inline-block;
+    margin-left: 0.25rem;
+}
+
+.form-container form input:hover, .form-container form input:focus
+{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+}
+
+/* Form input fields (textarea only) */
+main .form-container form textarea
+{
+    width: 100% !important;
+    border-radius: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-inline: 1rem;
+    /* padding: 1rem; */
+}
+
+/* Input hover & focus state */
+::placeholder
+{
+    font-weight: 400;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    opacity: 0.4;
+}
+
+a, input:focus, select:focus, textarea:focus, button:focus
+{
+    outline: none;
+}
+
+/* Form input fields (select elemet only) */
+main .form-container form .custom-select
+{
+    position: relative;
+    width: 100%;
+}
+
+/* Eliminate all default settings */
+main .form-container form .custom-select select
+{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    outline: none;
+}
+
+main .form-container form .custom-select
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+main .form-container form .custom-select::after
+{
+    grid-area: select;
+    content: "";
+    flex-direction: row;
+    justify-self: end;
+    align-self: center;
+    width: 0.8em;
+    height: 0.5em;
+    background-color: black;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+/* Reset & submit button */
+main .form-container form #button-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .form-container form button
+{
+    padding: 0.75rem 1rem;
+    width: 49%;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+main .form-container form button#reset
+{
+    background-color: white;
+}
+
+main .form-container form button#submit
+{
+    background-color: var(--article-url-color);
+    color: white;
+}
+
+/* For tablet screen */
+@media screen and (max-width: 710px)
+{
+    main .form-container form
+    {
+        display: block;
+    }
+
+    main .form-container form #skill_list .input-option-container
+    {
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+/* For small screen devices */
+@media screen and (max-width: 420px)
+{
+    .form-container form h1
+    {
+        font-size: 2rem;
+    }
+
+    main .form-container form #button-container
+    {
+        display: block;
+    }
+    
+    main .form-container form button
+    {
+        width: 100%;
+    }
+
+    main .form-container form button#reset
+    {
+        margin-bottom: 12px;
+    }
+}
