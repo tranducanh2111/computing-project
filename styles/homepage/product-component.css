@@ -104,7 +104,7 @@
 }
 
 /* For small size screen */
-@media screen and (max-width: 711px)
+@media screen and (max-width: 552px)
 {
     .product-card-container
     {
