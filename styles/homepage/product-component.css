@@ -81,12 +81,34 @@
     margin-bottom: 2.25rem;
 }
 
-@media screen and (max-width: 711px)
+/* For tablet screen */
+@media screen and (max-width: 906px)
 {
+    .product-component-visualization
+    {
+        justify-content: center;
+    }
+
     #product-component
     {
         display: block;
         margin-top: 1rem;
+    }
+
+    .product-card-container
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* For small size screen */
+@media screen and (max-width: 711px)
+{
+    .product-card-container
+    {
+        display: block;
     }
 
     .product-content-header h3
