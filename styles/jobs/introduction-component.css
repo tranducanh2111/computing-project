@@ -1,0 +1,88 @@
+@import url('../main.css');
+
+main
+{
+    margin-top: calc(var(--header-height-large-screen) + 6rem);
+}
+
+#introduction-component
+{
+    display: grid;
+    grid-template-areas:
+        "heading heading"
+        "left right"
+        "image-container image-container";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3rem auto 1fr;
+    column-gap: 3rem;
+    row-gap: 4rem;
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+#introduction-component h1
+{
+    grid-area: heading;
+    color: var(--first-color);
+    font-size: 3rem;
+}
+
+#introduction-component .left, #introduction-component .right
+{
+    font-size: 1.25rem;
+}
+
+#introduction-component .left
+{
+    grid-area: left;
+}
+
+#introduction-component .right
+{
+    grid-area: right;
+}
+
+#introduction-component .image-container
+{
+    margin-top: 4rem;
+    grid-area: image-container;
+    width: 100%;
+    max-width: 72rem;
+    opacity: 0.85;
+}
+
+#introduction-component .image-container img
+{
+    width: 100%;
+    max-width: 72rem;
+}
+
+@media screen and (max-width: 600px)
+{
+    main
+    {
+        margin-top: calc(var(--header-height) + 4rem);
+    }
+
+    #introduction-component
+    {
+        display: block;
+        padding: 2pc;
+    }
+
+    #introduction-component h1
+    {
+        font-size: 2.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #introduction-component p
+    {
+        font-size: 1rem;
+    }
+
+    #introduction-component p.left
+    {
+        margin-bottom: 1.5rem;
+    }
+}

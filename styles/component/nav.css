@@ -1,8 +1,8 @@
+@import url('../main.css');
+
 /* VARIABLES CSS */
 :root
 {
-    --header-height: 3.5rem;
-
     /* Colors */
     --title-color: hsl(230, 75%, 15%);
     --text-color-search-bar: hsl(230, 12%, 40%);
@@ -40,7 +40,6 @@
 {
     max-width: 1120px;
     margin-inline: 1.5rem;
-
 }
 
 /* HEADER & NAV */
@@ -119,7 +118,7 @@
 {
     .nav-component
     {
-        height: calc(var(--header-height) + 2rem);
+        height: var(--header-height-large-screen);
         column-gap: 3rem;
     }
     .nav-component-close, .nav-component-toggle

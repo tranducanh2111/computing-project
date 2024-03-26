@@ -2,8 +2,8 @@
 
 main
 {
-    padding-top: calc(88px + 48px);
-    padding: calc(88px + 4rem) 2pc;
+    padding-top: calc(var(--header-height-large-screen) + 48px);
+    padding: calc(var(--header-height-large-screen) + 4rem) 2pc;
     padding-bottom: 4rem;
     background: linear-gradient(80deg, var(--first-color) 1%, #deebff 50%)
 }
@@ -256,6 +256,11 @@ main .form-container form button#submit
 /* For tablet screen */
 @media screen and (max-width: 710px)
 {
+    main
+    {
+        padding-top: calc(var(--header-height-large-screen) + 48px);
+    }
+
     main .form-container form
     {
         display: block;

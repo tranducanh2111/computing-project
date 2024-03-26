@@ -1,0 +1,7 @@
+@import url('../main.css');
+
+#mission-component
+{
+    max-width: 72rem;
+    margin: 0 auto;
+}
