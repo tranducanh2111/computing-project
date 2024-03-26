@@ -1,0 +1,70 @@
+@import url('../main.css');
+
+:root
+{
+    --white-text-color: white;
+}
+
+#job-thread-component
+{
+    background-color: var(--first-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--white-text-color);
+}
+
+#job-thread-component div
+{
+    padding: 6rem 7rem;
+}
+
+#job-thread-component div.left
+{
+    border-right: 1px solid var(--white-text-color);
+}
+
+#job-thread-component h3
+{
+    color: var(--white-text-color);
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+#job-thread-component button
+{
+    background-color: var(--first-color);
+    color: var(--white-text-color);
+    margin-top: 2rem;
+    border: 1px solid var(--white-text-color);
+    padding: 1rem 1.75rem;
+}
+
+#job-thread-component button:hover
+{
+    background-color: var(--button-hover-color);
+    /* color: var(--first-color); */
+}
+
+@media screen and (max-width: 600px)
+{
+    #job-thread-component
+    {
+        display: block;
+    }
+
+    #job-thread-component div
+    {
+        padding: 3rem 2pc;
+    }
+
+    #job-thread-component div.left
+    {
+        border-right: 0px;
+        border-bottom: 1px solid white;
+    }
+
+    #job-thread-component button
+    {
+        width: 100%;
+    }
+}
