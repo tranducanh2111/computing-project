@@ -1,0 +1,72 @@
+@import url('../main.css');
+
+#career-search-component
+{
+    height: 27rem;
+    background-image: url('../../image/jobs/career-search.jpg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#career-search-component .search-container
+{
+    width: 50%;
+    padding-inline-start: 6rem;
+    padding-inline-end: 6rem;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    padding: 3em;
+    border-radius: 12px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+}
+
+#career-search-component .search-container input
+{
+    background: transparent;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: var(--text-color);
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+::placeholder
+{
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    opacity: 0.4;
+}
+
+#career-search-component .search-container h2
+{
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 700px)
+{
+    #career-search-component .search-container
+    {
+        width: 100%;
+        margin: 2pc;
+    }
+
+    #career-search-component .search-container h2
+    {
+        font-size: 2rem;
+    }
+}
