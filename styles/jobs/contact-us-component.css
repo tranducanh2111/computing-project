@@ -1,0 +1,68 @@
+@import url('../main.css');
+
+:root
+{
+    --white-text-color: white;
+}
+
+#contact-us-component
+{
+    max-width: 72rem;
+    background-color: var(--first-color);
+    color: var(--white-text-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 1rem auto;
+}
+
+#contact-us-component h3
+{
+    color: var(--white-text-color);
+}
+
+#contact-us-component a
+{
+    color: var(--white-text-color);
+}
+
+#contact-us-component span a
+{
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#contact-us-component img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#contact-us-component .content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4pc;
+}
+
+@media screen and (max-width: 600px)
+{
+    #contact-us-component
+    {
+        display: block;
+        margin-left: 2pc;
+        margin-right: 2pc;
+    }
+
+    #contact-us-component .content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem 3pc;
+    }
+}
