@@ -1,13 +1,21 @@
 @import url('../main.css');
 
-#mission-component
+#about-company-component h1
+{
+    max-width: 72rem;
+    margin: 2rem auto 4rem;
+    text-align: center;
+    color: var(--first-color);
+}
+
+.article-container
 {
     max-width: 72rem;
     margin: 2rem auto;
     padding: 0 2pc;
 }
 
-#mission-component article .content-container span a:hover
+.article-container article .content-container span a:hover
 {
     text-decoration: underline;
     scale: 1.02;
@@ -17,7 +25,7 @@
 }
 
 /* Article */
-#mission-component article
+.article-container article
 {
     display: grid;
     grid-template-columns: repeat(2, 48%);
@@ -25,30 +33,30 @@
     margin-bottom: 3rem;
 }
 
-#mission-component article h3
+.article-container article h3
 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
 
-#mission-component article span a
+.article-container article span a
 {
     display: inline-block;
     margin-top: 1rem;
     color: var(--first-color);
 }
 
-#mission-component article span
+.article-container article span
 {
     font-weight: 500;
 }
 
-#mission-component article .content-container
+.article-container article .content-container
 {
     grid-area: content;
 }
 
-#mission-component article .image-container
+.article-container article .image-container
 {
     grid-area: image;
     display: flex;
@@ -56,18 +64,18 @@
     align-items: center;
 }
 
-#mission-component article .image-container img
+.article-container article .image-container img
 {
     width: 100%;
 }
 
 /* Article has image on the left */
-#mission-component article.left
+.article-container article.left
 {
     grid-template-areas: "image content";
 }
 
-#mission-component article.left .content-container
+.article-container article.left .content-container
 {
     width: 70%;
     display: flex;
@@ -78,12 +86,12 @@
 }
 
 /* Article has image on the right */
-#mission-component article.right
+.article-container article.right
 {
     grid-template-areas: "content image";
 }
 
-#mission-component article.right .content-container
+.article-container article.right .content-container
 {
     padding-right: 15%;
     display: flex;
@@ -94,13 +102,13 @@
 /* Tablet Layout */
 @media screen and (max-width: 780px)
 {
-    #mission-component article h3
+    .article-container article h3
     {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
-    #mission-component article.left .content-container
+    .article-container article.left .content-container
     {
         width: 85%;
         margin: 0 auto;
@@ -110,22 +118,22 @@
 /* Mobile layout */
 @media screen and (max-width: 600px)
 {
-    #mission-component article
+    .article-container article
     {
         display: block;
     }
 
-    #mission-component article .image-container
+    .article-container article .image-container
     {
         margin-bottom: 1rem;
     }
 
-    #mission-component article.right .content-container
+    .article-container article.right .content-container
     {
         padding-right: 0;
     }
 
-    #mission-component article.left .content-container
+    .article-container article.left .content-container
     {
         width: 100%;
     }
